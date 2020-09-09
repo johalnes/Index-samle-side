@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h3> Dette er starten på body som lister API'er</h3>
+  <br>
+  <ul>
+    {% for i in range(locations| length) %}
+        <li> <a href={{locations[i]}}> {{headers[i]}} - {{descriptions[i]}}</a></li></li>
+    {% endfor %}
+  </ul>
+  <h3> Slutt på API'er</h3>
+{% endblock %}
